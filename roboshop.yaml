@@ -24,7 +24,7 @@
         Name: "{{ item }}-{{ env }}"
     loop: "{{ instances }}"
     register: ec2_output
-    when: action == "create"
+
 
   - name: print the output
     ansible.builtin.debug:
